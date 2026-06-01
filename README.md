@@ -46,10 +46,10 @@ Data is split **80 / 10 / 10** (train / val / test), stratified by label.
 
 | metric    | score |
 |-----------|-------|
-| accuracy  | 0.878 |
-| precision | 0.930 |
-| recall    | 0.851 |
-| F1        | 0.888 |
+| accuracy  | 0.985 |
+| precision | 0.987 |
+| recall    | 0.990 |
+| F1        | 0.988 |
 
 ---
 
