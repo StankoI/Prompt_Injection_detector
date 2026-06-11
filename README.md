@@ -64,7 +64,7 @@ A second run used a more conservative setup with **2 epochs** and **early stoppi
 | Baseline | 0.72 | 1.00 | 0.47 | 0.64 | 0.62 | 1.00 | 0.77 |
 | Augmented | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 | 0.98 |
 
-These results suggest that augmentation mainly improves the model's ability to avoid false alarms on difficult benign prompts while still preserving strong detection of true injection attempts. On the regular test set, baseline and augmented performance remained close, so the gain appears concentrated on harder edge cases rather than coming from a trade-off in standard accuracy.[file:337]
+These results suggest that augmentation mainly improves the model's ability to avoid false alarms on difficult benign prompts while still preserving strong detection of true injection attempts. On the regular test set, baseline and augmented performance remained close, so the gain appears concentrated on harder edge cases rather than coming from a trade-off in standard accuracy.
 
 ## Repository layout
 
