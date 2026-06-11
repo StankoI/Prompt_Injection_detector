@@ -51,11 +51,11 @@ Fine-tuned on Google Colab with the Hugging Face `Trainer`.
 
 ## Hard-negative experiment
 
-An additional robustness experiment was run to test how well the classifier handles **hard negatives**: prompts that look suspicious or contain jailbreak-like wording but are actually benign, along with difficult injection examples. The goal was to measure whether data augmentation improves robustness beyond the standard held-out test set.[file:337]
+An additional robustness experiment was run to test how well the classifier handles **hard negatives**: prompts that look suspicious or contain jailbreak-like wording but are actually benign, along with difficult injection examples. The goal was to measure whether data augmentation improves robustness beyond the standard held-out test set.
 
-Two models were compared on a 96-example hard-negative benchmark: a **baseline** model trained on the standard dataset, and an **augmented** model trained with extra hard-negative examples. In the first run with a longer schedule, the baseline reached only 70% accuracy on this benchmark, while the augmented model reached 100%, suggesting a large robustness gain on difficult edge cases.[file:337]
+Two models were compared on a 96-example hard-negative benchmark: a **baseline** model trained on the standard dataset, and an **augmented** model trained with extra hard-negative examples. In the first run with a longer schedule, the baseline reached only 70% accuracy on this benchmark, while the augmented model reached 100%, suggesting a large robustness gain on difficult edge cases.
 
-A second run used a more conservative setup with **2 epochs** and **early stopping patience = 1**. Under that setup, the baseline still struggled on hard negatives with 72% accuracy, while the augmented model achieved 98% accuracy, with both benign and injection F1 scores at 0.98.[file:337]
+A second run used a more conservative setup with **2 epochs** and **early stopping patience = 1**. Under that setup, the baseline still struggled on hard negatives with 72% accuracy, while the augmented model achieved 98% accuracy, with both benign and injection F1 scores at 0.98.
 
 ### Hard-negative benchmark results
 
