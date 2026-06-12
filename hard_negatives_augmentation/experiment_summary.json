@@ -1,0 +1,56 @@
+{
+  "model_name": "distilbert-base-multilingual-cased",
+  "max_len": 256,
+  "epochs": 5,
+  "learning_rate": 2e-05,
+  "batch_train": 32,
+  "batch_eval": 64,
+  "seed": 42,
+  "base_train_size": 14036,
+  "augmented_train_size": 14220,
+  "val_size": 941,
+  "test_size": 942,
+  "hard_negative_eval_size": 96,
+  "results": [
+    {
+      "run": "baseline",
+      "split": "val",
+      "accuracy": 0.9628055260361318,
+      "precision": 0.9577981651376147,
+      "recall": 0.9775280898876404,
+      "f1": 0.9675625579240037,
+      "specificity": 0.9434889434889435,
+      "fpr": 0.056511056511056514
+    },
+    {
+      "run": "baseline",
+      "split": "test",
+      "accuracy": 0.9596602972399151,
+      "precision": 0.9638989169675091,
+      "recall": 0.967391304347826,
+      "f1": 0.9656419529837251,
+      "specificity": 0.9487179487179487,
+      "fpr": 0.05128205128205128
+    },
+    {
+      "run": "augmented",
+      "split": "val",
+      "accuracy": 0.9670563230605739,
+      "precision": 0.9754253308128544,
+      "recall": 0.9662921348314607,
+      "f1": 0.9708372530573848,
+      "specificity": 0.9680589680589681,
+      "fpr": 0.03194103194103194
+    },
+    {
+      "run": "augmented",
+      "split": "test",
+      "accuracy": 0.964968152866242,
+      "precision": 0.9761467889908257,
+      "recall": 0.9637681159420289,
+      "f1": 0.9699179580674567,
+      "specificity": 0.9666666666666667,
+      "fpr": 0.03333333333333333
+    }
+  ]
+}
