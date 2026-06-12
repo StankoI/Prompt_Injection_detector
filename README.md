@@ -49,7 +49,7 @@ Fine-tuned on Google Colab with the Hugging Face `Trainer`.
 | Recall | 0.990 |
 | F1 | 0.988 |
 
-## Hard-negative experiment
+## Hard-negatives experiment
 
 An additional robustness experiment was run to test how well the classifier handles **hard negatives**: prompts that look suspicious or contain jailbreak-like wording but are actually benign, along with difficult injection examples. The goal was to measure whether data augmentation improves robustness beyond the standard held-out test set.
 
